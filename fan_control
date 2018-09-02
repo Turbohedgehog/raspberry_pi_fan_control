@@ -12,24 +12,24 @@
 
 case "$1" in
   start)
-    python /home/pi/fan_control/fan_control.py start
+    python /opt/fan_control.py start
     exit 0
     ;;
   stop)
-    python /home/pi/fan_control/fan_control.py stop
+    python /opt/fan_control.py stop
     exit 0
     ;;
   restart)
-    python /home/pi/fan_control/fan_control.py restart
-    exit0
+    python /opt/fan_control.py restart
+    exit 0
     ;;
   on)
-    python /home/pi/fan_control/fan_control.py on    
-    exit0
+    python /opt/fan_control.py on    
+    exit 0
     ;;
   off)
-    python /home/pi/fan_control/fan_control.py off
-    exit0
+    python /opt/fan_control.py off
+    exit 0
     ;;
   *)
     #echo "Usage: /etc/init.d/fan_control {start|stop|restart|on|off}"
